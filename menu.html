@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!--Tells browser this is an HTML5 document.-->
+<html lang="en"> <!--sets language of website to English.-->
+
+<head> <!--Contains info about the page.-->
+    <meta charset="UTF-8"> <!--allows browser to display different characters and symbols.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adjusts page viewport to fit the device screen.-->
+    <title>The Goated Cafe - Menu</title> <!--Title displayed in browser tab.-->
+    <link rel ="stylesheet" href="style.css"> <!--links HTML to CSS file for styling.-->
+</head>
+<body> <!--Content that is displayed on the page.-->
+    <header> <!--header section of website.-->
+        <h1>The Goated Cafe</h1> <!--Main heading of website.-->
+
+        <nav> <!--navigation bar to switch between pages (relative links).-->
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <button onclick="toggleDarkMode()">Dark Mode</button> <!--calls toggleDarkMode function when clicked.-->
+        </nav>
+    </header>
+
+     <main> <!--main content of page.-->
+        <h2>Our Menu</h2> <!--heading for menu page.-->
+
+        <p>
+            Check out our selection of freshly made GOATED
+            food and drinks!
+        </p>
+
+        <h3>Drinks</h3> <!--heading for drinks section.-->
+
+        <table> <!--table to display drinks, descriptions and prices.-->
+            <tr> <!--first row contains table headings.-->
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr> <!--each row contains data for one menu item (td).-->
+                <td>Latte</td>
+                <td>Espresso with steamed milk</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>Espresso with milk and foam</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>Hot Chocolate</td>
+                <td>Rich chocolate with steamed milk</td>
+                <td>$5.50</td>
+            </tr>
+            <tr>
+                <td>Iced Coffee</td>
+                <td>Cold coffee served over ice</td>
+                <td>$6.00</td>
+            </tr>
+        </table>
+
+        <h3>Food</h3> <!--heading for food section.-->
+
+        <table> <!--table to display food, descriptions and prices.-->
+            <tr> <!--first row contains table headings.-->
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr> <!--each row contains data for one menu item (td).-->
+                <td>Ham and Cheese Toastie</td>
+                <td>Toasted sandwich with ham and cheese</td>
+                <td>$9.00</td>
+            </tr>
+            <tr>
+                <td>Avocado Toast</td>
+                <td>Smashed avocado on sourdough</td>
+                <td>$12.00</td>
+            </tr>
+            <tr>
+                <td>Blueberry Muffin</td>
+                <td>Freshly baked blueberry muffin</td>
+                <td>$5.50</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer> <!--footer at bottom of website.-->
+        <p>&copy; 2026 The Goated Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!--links JavaScript file to HTML page.-->
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!--Tells browser this is an HTML5 document.-->
+<html lang="en"> <!--sets language of website to English.-->
+
+<head> <!--Contains info about the page.-->
+    <meta charset="UTF-8"> <!--allows browser to display different characters and symbols.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adjusts page viewport to fit the device screen.-->
+    <title>The Goated Cafe - About Us</title> <!--Title displayed in browser tab.-->
+    <link rel="stylesheet" href="style.css"> <!--links HTML to CSS file for styling.-->
+</head>
+
+<body> <!--Content that is displayed on the page.-->
+
+    <header> <!--header section of website.-->
+        <h1>The Goated Cafe</h1> <!--Main heading of website.-->
+
+        <nav> <!--navigation bar to switch between pages (relative links).-->
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <button onclick="toggleDarkMode()">Dark Mode</button> <!--calls toggleDarkMode function when clicked.-->
+        </nav>
+    </header>
+
+    <main> <!--main content of page.-->
+        <h2>About Us</h2> <!--heading for about us page.-->
+
+        <p>
+            The Goated Cafe is a local cafe that
+            focuses on providing quality coffee,
+            fresh food and friendly service.
+        </p>
+
+        <p>
+            Our goal is to create a welcoming
+            environment where customers can relax,
+            catch up with friends or enjoy a meal.
+        </p>
+        <h3>Opening Hours</h3> <!--display opening hours of cafe.-->
+
+        <p>Monday - Friday: 7:00 AM - 4:00 PM</p>
+        <p>Saturday - Sunday: 8:00 AM - 3:00 PM</p>
+
+        <h3>Contact Us</h3> <!--display contact details of cafe.-->
+
+        <p>Email: shay@goatedcafe.awesome</p>
+        <p>Location: Melbourne, Victoria</p>
+
+        <h2>Cafe Feedback</h2> <!--heading for feedback section.-->
+        <p>Let us know about your experience at The Goated Cafe!</p>
+
+        <form onsubmit="submitFeedback(event)"> <!--calls submitFeedback function when form is submitted.-->
+            <label for="name">Name:</label><br> <!--label for name input.-->
+            <input type="text" id="name" name="name" required> <!--gather customer name, required so it cannot be left blank.-->
+            <br><br>
+
+            <p>How was your experience?</p> <!--ask customer to rate their experience.-->
+            <input type="radio" id="good" name="experience" value="good"> <!--Radio buttons have the same name so only one can be selected.-->
+            <label for="good">Good</label><br>
+
+            <input type="radio" id="average" name="experience" value="average">
+            <label for="average">Average</label><br>
+
+            <input type="radio" id="poor" name="experience" value="poor">
+            <label for="poor">Poor</label>
+            <br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea> <!--larger input box for feedback, required field.-->
+            <br><br>
+
+            <button type="submit">Submit Feedback</button> <!--button to submit feedback form.-->
+        </form>
+        <p>This form is for demonstration purposes only. No feedback is sent or stored.</p>
+    </main>
+
+    <footer> <!--footer at bottom of website.-->
+        <p>&copy; 2026 The Goated Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!--links JavaScript file to HTML page.-->
+</body>
+</html>

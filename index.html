@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!--Tells browser this is an HTML5 document.-->
+<html lang="en"> <!--sets language of website to English.-->
+
+<head> <!--Contains info about the page.-->
+    <meta charset="UTF-8"> <!--allows browser to display different characters and symbols.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adjusts page viewport to fit the device screen.-->
+    <title>The Goated Cafe - Home</title> <!--Title displayed in browser tab.-->
+    <link rel ="stylesheet" href="style.css"> <!--links HTML to CSS file for styling.-->
+</head>
+<body> <!--Content that is displayed on the page.-->
+    <header> <!--header section of website.-->
+        <h1>The Goated Cafe</h1> <!--Main heading of website.-->
+
+        <nav> <!--navigation bar to switch between pages (relative links).-->
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <button onclick="toggleDarkMode()">Dark Mode</button> <!--calls toggleDarkMode function when clicked.-->
+        </nav>
+    </header>
+
+    <main> <!--main content of page.-->
+        <h2>Welcome to The Goated Cafe!</h2> <!--welcome heading for home page.-->
+        <p>At The Goated Cafe, we serve the finest coffee and pastries in town. Our cozy atmosphere is perfect for catching up with friends or enjoying a quiet moment alone.</p>
+        <p>Come visit us and experience the best coffee in town!</p>
+        <img src="images/cafe.jpg" alt="My Goated Latte Art" width="400"> <!--displays cafe image from images folder. Alt text for accessibility.-->
+    </main>
+
+    <footer> <!--footer at bottom of website.-->
+        <p>&copy; 2026 The Goated Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!--links JavaScript file to HTML page.-->
+</body>
+</html>

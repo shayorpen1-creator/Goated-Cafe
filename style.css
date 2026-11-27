@@ -1,0 +1,117 @@
+body { /*Default styling for all pages.*/
+    font-family: Arial, sans-serif; /*Arial is main font, sans-serif as backup.*/
+    background-color: #f5f0e8; /*cream background colour.*/
+    color: #333333; /*default text colour.*/
+    margin: 0; /*remove default space around body.*/
+
+}
+
+header { /*styling for header section.*/
+    background-color: #60452f; /*backup colour if image fails to load.*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/cafeHeader.jpg"); /*add header image with dark overlay so text is readable.*/
+    background-size: cover; /*fill header with image.*/
+    background-position: center; /*centre background image.*/
+    color: white;
+    text-align: center; /*centre text.*/
+    padding: 35px 20px; /*add more space above and below header content.*/
+}
+
+nav a { /*styling for navigation links.*/
+    color: white;
+    text-decoration: none; /*remove default underline.*/
+    margin: 10px;
+}
+
+nav a:hover { /*underline links when mouse hovers over them.*/
+    text-decoration:underline;
+}
+
+main { /*styling for main content.*/
+    padding: 20px;
+    max-width: 900px; /*limit width of content.*/
+    margin: auto; /*centre main content horizontally.*/
+}
+
+h2, h3 { /*set colour of subheadings.*/
+    color: #60452f;
+}
+
+img { /*allow image to fit smaller screens.*/
+    max-width: 100%;
+    height: auto; /*keep original image proportions.*/
+}
+
+table { /*styling for food and drink tables.*/
+    width: 100%;
+    border-collapse: collapse; /*combine table borders into one.*/
+    margin-bottom: 30px; /*space below each table.*/
+}
+
+th, td{ /*styling for table headings and data cells.*/
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th { /*set background colour of table headings.*/
+    background-color: #e0d0bd;
+}
+
+footer { /*styling for footer.*/
+    background-color: #60452f;
+    color: white;
+    text-align: center; /*centre text.*/
+    padding: 10px;
+}
+
+.dark-mode th { /*change table heading colour when dark mode enabled.*/
+    background-color: #444444;
+}
+
+.dark-mode th, .dark-mode td { /*change table border colour in dark mode.*/
+    border-color: #777777;
+}
+
+button { /*general button styling.*/
+    padding: 8px 12px;
+    margin: 10px;
+    cursor: pointer; /*changes cursor when hovering over button.*/
+}
+
+.dark-mode { /*colours applied when dark-mode class is added to body.*/
+    background-color: #1e1e1e;
+    color: white;
+}
+
+form { /*styling for cafe feedback form.*/
+    border: 1px solid #60452f;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 5px; /*round corners of form.*/
+}
+
+form input[type="text"], form textarea { /*styling for name and feedback inputs.*/
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /*include padding and border in total width.*/
+}
+
+form button { /*styling for submit feedback button.*/
+    background-color: #60452f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer; /*changes cursor when hovering over button.*/
+}
+
+form button:hover { /*change button colour when mouse hovers over it.*/
+    background-color: #806044;
+}
+
+.dark-mode h2, .dark-mode h3 { /*lighter headings so they are readable in dark mode.*/
+    color: #e0d0bd;
+}
+
+.dark-mode form { /*lighter form border in dark mode.*/
+    border-color: #777777;
+}
